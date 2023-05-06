@@ -1,0 +1,190 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  --font-semi: 600;
+  /*===== Colores =====*/
+  /*===== Fuente y tipografia =====*/
+  --body-font: "Bungee", cursive;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
+  --white: #fff;
+  --black: #000;
+  /*===== Margenes =====*/
+  --mb-2: 1rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  /*===== z index =====*/
+  --z-back: -10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: 0.875rem;
+  }
+}
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  background: #e9bd01;
+  color: var(--white);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*===== CLASS CSS ===== */
+header {
+  width: 100%;
+  padding-block: 15px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+}
+header a.nav-logo {
+  font-size: 32px;
+  color: var(--white);
+}
+@media (max-width: 700px) {
+  header a.nav-logo {
+    font-size: 22px;
+  }
+}
+header a.nav-logo img {
+  max-width: 5rem;
+}
+header ul {
+  height: 100%;
+}
+header ul a {
+  color: var(--white);
+}
+
+#home {
+  width: 100%;
+  padding-block: 150px 100px;
+}
+#home h1.title {
+  font-size: 60px;
+}
+@media (max-width: 700px) {
+  #home h1.title {
+    font-size: 45px;
+  }
+}
+#home a.btn {
+  padding: 15px 32px;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 30px;
+}
+
+#about {
+  width: 100%;
+  padding-block: 50px;
+}
+#about h1.title {
+  font-size: 53px;
+}
+@media (max-width: 700px) {
+  #about h1.title {
+    font-size: 42px;
+  }
+}
+#about p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#tokenomics {
+  min-height: 100vh;
+  width: 100%;
+  padding-block: 50px;
+}
+#tokenomics h1.title {
+  font-size: 52px;
+}
+@media (max-width: 700px) {
+  #tokenomics h1.title {
+    font-size: 37px;
+  }
+}
+#tokenomics p {
+  color: rgba(255, 255, 255, 0.5);
+}
+#tokenomics a.btn {
+  padding: 15px 32px;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 30px;
+}
+#tokenomics iframe {
+  max-width: 100%;
+}
+#tokenomics .circle {
+  height: 20rem;
+  width: 20rem;
+  background-color: var(--black);
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+#tokenomics .circle h1.title {
+  font-size: 48px;
+}
+
+#icon {
+  width: 100%;
+  padding-block: 50px;
+}
+#icon a {
+  color: #000;
+}
+#icon a i {
+  font-size: 42px;
+}
+
+footer {
+  width: 100%;
+  background-color: #000;
+  padding-block: 20px;
+}/*# sourceMappingURL=style.css.map */
